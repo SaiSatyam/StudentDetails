@@ -1,0 +1,26 @@
+<template>
+	<div repeat.for="a of data">
+	<compose model.bind="a" view-model="Marks/GetMarks">
+	</div>
+</template>
+<!-- 
+<template>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+    <p>hiM</p>
+    <div id="content"></div>
+        <script> 
+            d3.select('#content')
+   .selectAll('h1')
+   .data(['Sarah', 'Robert', 'Maria', 'Marc'])
+   .enter()
+   .append('h1')
+   .text(function(name) {return 'Hello ' + name + '!'});
+        </script>
+    </body>
+</html>
+</template> -->
